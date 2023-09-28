@@ -1,4 +1,4 @@
-const Tag = require("../models/category.model.js");
+import Tag from "../models/category.model.js";
 
 const createTag = async (req, res) => {
   try {
