@@ -22,7 +22,7 @@ const createSection = async (req, res) => {
 			.populate({
 				path: "courseContent", // That array where we are storing Section
 				populate: {
-					path: "SubSection",
+					path: "subSection",
 				},
 			})
 			.exec();
@@ -52,7 +52,7 @@ const updateSection = async (req, res) => {
 		const course = await Course.findById(courseId)
 			.populate({
 				path: "courseContent", // same TODO maybe
-				populate: { path: "SubSection" },
+				populate: { path: "subSection" },
 			})
 			.exec();
 
@@ -92,7 +92,7 @@ const deleteSection = async (req, res) => {
 		const course = await Course.findById(courseId)
 			.populate({
 				path: "courseContent",
-				populate: { path: "SubSection" },
+				populate: { path: "subSection" },
 			})
 			.exec();
 
