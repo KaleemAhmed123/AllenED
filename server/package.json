@@ -19,6 +19,7 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^7.5.2",
     "nodemailer": "^6.9.5",
-    "otp-generator": "^4.0.1"
+    "otp-generator": "^4.0.1",
+    "razorpay": "^2.9.2"
   }
 }

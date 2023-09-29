@@ -73,3 +73,5 @@ const passwordUpdated = (email, name) => {
     
     </html>`;
 };
+
+export default passwordUpdated;
